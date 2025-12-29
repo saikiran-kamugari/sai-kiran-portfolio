@@ -1,7 +1,8 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Sai Kiran Kamugari | Full-Stack & Platform Engineer",
   description:
     "Full-stack developer with 4+ years experience in React, Node.js, TypeScript, Java, AWS, and Server-Driven UI platforms.",
@@ -23,3 +24,18 @@ export const metadata = {
     type: "website",
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-white text-gray-900 dark:bg-black dark:text-gray-100">
+        <Navbar />
+        {children}
+      </body>
+    </html>
+  );
+}
