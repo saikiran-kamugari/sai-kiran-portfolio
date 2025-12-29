@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-20">
+    <main className="max-w-6xl mx-auto px-6 py-24">
       {/* HERO */}
       <section className="mb-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6">
           Full-Stack Developer
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
@@ -58,7 +58,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-8">Projects</h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="border rounded-2xl p-6">
+          <div className="border rounded-3xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-2">
               Server-Driven UI Platform
             </h3>
